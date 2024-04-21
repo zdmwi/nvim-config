@@ -5,7 +5,8 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
     'lua_ls',
-    'pyright'
+    'pyright',
+    'clangd'
 })
 
 -- (Optional) Configure lua language server for neovim

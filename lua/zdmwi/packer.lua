@@ -14,16 +14,13 @@ return require('packer').startup(function(use)
   }
 
   use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  require("rose-pine").setup({
-			  groups = {
-				  background = '#121019'
-			  }
-		  })
-		  vim.cmd('colorscheme rose-pine')
-	  end
+      'projekt0n/github-nvim-theme',
+      config = function()
+        require('github-theme').setup({
+        })
+
+        vim.cmd('colorscheme github_dark_dimmed')
+    end
   })
 
   use{
