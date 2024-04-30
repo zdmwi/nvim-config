@@ -3,15 +3,6 @@
 local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
-lsp.ensure_installed({
-    'lua_ls',
-    'pyright',
-    'clangd'
-})
-
--- (Optional) Configure lua language server for neovim
-lsp.nvim_workspace()
-
 lsp.setup()
 
 local metals_lsp = lsp.build_options('metals', {})

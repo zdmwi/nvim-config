@@ -9,10 +9,15 @@ return {
             "3rd/image.nvim",
         },
         keys = {
-            { "<leader>ft", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
+            { "<leader>ft",
+              function()
+                  require("neo-tree.command").execute({
+                      toggle = true,
+                      position = "current"
+                  })
+              end,
+              desc = "NeoTree Toggle"
+            }
         },
-        config = function()
-            require("neo-tree").setup()
-        end,
     }
 }
