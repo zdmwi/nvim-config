@@ -13,7 +13,7 @@ return {
               function()
                   require("neo-tree.command").execute({
                       toggle = true,
-                      position = "current"
+                      position = "left"
                   })
               end,
               desc = "NeoTree Toggle"
